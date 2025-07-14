@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useShopStore } from '../store/useStore';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://sooqxpress-server.onrender.com/api', 
+  baseURL: import.meta.env.VITE_API_URL, 
   headers: {
     'Content-Type': 'application/json',
   },
