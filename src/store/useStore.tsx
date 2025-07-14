@@ -59,6 +59,7 @@ export const useShopStore = create<ShopState>((set) => ({
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
+                    "Cache-Control": "no-cache",
                     authorization: `Bearer ${getToken}`,
                 },
             })
